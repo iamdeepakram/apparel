@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'OpenSansSemiBold';
+  src: local('OpenSansSemiBold'), url('./fonts/OpenSans-SemiBold.woff2') format('woff2'), url('./fonts/OpenSans-SemiBold.woff') format('woff');
+}
+
+.open-sans-semi-bold {
+  font-family: 'OpenSansSemiBold';
+}
+
+body{
+  background: transparent linear-gradient(136deg, #FCF3F3 0%, #FFFFFF 49%, #FAF1F0 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
 .App {
   text-align: center;
 }
@@ -36,3 +49,5 @@
     transform: rotate(360deg);
   }
 }
+
+
