@@ -3,8 +3,26 @@
   src: local('OpenSansSemiBold'), url('./fonts/OpenSans-SemiBold.woff2') format('woff2'), url('./fonts/OpenSans-SemiBold.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'AvenirLight';
+  src: local('AvenirLight'), url('./fonts/AvenirLight.woff2') format('woff2'), url('./fonts/AvenirLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'AvenirMedium';
+  src: local('AvenirMedium'), url('./fonts/AvenirMedium.woff2') format('woff2'), url('./fonts/AvenirMedium.woff') format('woff');
+}
+
 .open-sans-semi-bold {
   font-family: 'OpenSansSemiBold';
+}
+
+.avenir-light{
+  font-family: 'AvenirLight';
+}
+
+.avenir-medium{
+  font-family: 'AvenirMedium';
 }
 
 body{
