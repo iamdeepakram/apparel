@@ -1,13 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import girlImg from './img/girlImg.png'
+import mobileGirlImg from './img/mobgirlimg.png'
+
 
 function App() {
   return (
     <>
-
-    <div className="grid grid-rows-5 grid-cols-6 gap-2"  >
-      <div className=" inline-grid col-start-2 col-end-3  " > 
+    <div className="grid grid-rows-5 grid-cols-6 gap-2  "  >
+      <div className=" inline-grid col-start-2 col-end-3 max-md:col-end-7 " > 
         <span className="flex avenir-medium  ">
           <span className={`w-10 h-10 rounded-full border-[#E7A09E] border-2 place-self-center  `}  ></span>
           <span className='mt-12 ml-2 flex flex-col avenir-medium  text-[#5F5A5A] ' >
@@ -17,10 +18,15 @@ function App() {
         </span>
      
       </div>
-      <div className="col-start-4 col-end-7 row-span-6" >
-        <img src={girlImg} ></img>
+      <div className="col-start-4 col-end-7 row-span-6 max-md:col-start-1 col-span-6 row-start-2 " >
+      
+        <picture>
+          <source media="(max-width: 768px)" srcset={mobileGirlImg} />
+          <img src={girlImg}  className='image' ></img>
+        </picture>
+
       </div>
-      <div className="col-start-2 row-start-2 row-end-4 gap-4" >
+      <div className="col-start-2 row-start-2 row-end-4 gap-4 max-md:col-start-1 col-end-7 row-start-3 " >
         <div className="text-6xl tracking-[19.2px] text-were  avenir-light ">WE'RE</div>
         <div className="text-6xl tracking-[19.2px] avenir-medium  text-coming-soon"  >COMING</div>
         <div className="text-6xl tracking-[19.2px] avenir-medium text-coming-soon">SOON</div>
